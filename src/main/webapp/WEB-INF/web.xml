@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+<servlet>
+    <servlet-name>addStockServlet</servlet-name>
+    <servlet-class>com.srv.www.addStockServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>addStockServlet</servlet-name>
+    <url-pattern>/addStockServlet</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>distributionServlet</servlet-name>
+    <servlet-class>com.srv.www.distributionServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>distributionServlet</servlet-name>
+    <url-pattern>/distributionServlet</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>stockViewServlet</servlet-name>
+    <servlet-class>com.srv.www.stockViewServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>stockViewServlet</servlet-name>
+    <url-pattern>/stockViewServlet</url-pattern>
+</servlet-mapping>
+
+
+ <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>

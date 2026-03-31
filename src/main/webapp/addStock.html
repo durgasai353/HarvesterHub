@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Stock</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+background:#f4f6f9;
+}
+
+.card{
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container mt-5">
+
+<div class="card p-4 col-md-6 mx-auto">
+
+<h3 class="text-center mb-4">Add New Stock</h3>
+
+<form action="addStockServlet" method="post">
+
+<div class="mb-3">
+<label class="form-label">Item Name</label>
+<input type="text" name="name" class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Category</label>
+<select name="category" class="form-control">
+<option>Wheat Seeds</option>
+<option>Rice Seeds</option>
+<option>Fertilizer</option>
+<option>Pesticide</option>
+</select>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Quantity</label>
+<input type="number" name="qty" class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Minimum Limit</label>
+<input type="number" name="min" class="form-control">
+</div>
+
+<div class="text-center">
+<button class="btn btn-success">Add Stock</button>
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</body>
+</html>
